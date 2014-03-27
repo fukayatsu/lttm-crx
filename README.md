@@ -10,7 +10,7 @@ Looks Tiqav To Misawa (useful Chrome Extension)
 !l or !ll...
 ```
 
-![](http://i.gyazo.com/3dfd64155af79faf6adb475c9a2496fe.gif)
+![](https://github.com/fukayatsu/lttm-crx/blob/master/screenshots/3dfd64155af79faf6adb475c9a2496fe.gif?raw=true)
 
 # tiqav
 
@@ -18,7 +18,7 @@ Looks Tiqav To Misawa (useful Chrome Extension)
 !t<query>
 ```
 
-![](http://i.gyazo.com/50e9810b792c4c6e3f101b9f15775fb1.gif)
+![](https://github.com/fukayatsu/lttm-crx/raw/master/screenshots/50e9810b792c4c6e3f101b9f15775fb1.gif?raw=true)
 
 # misawa
 
@@ -26,5 +26,5 @@ Looks Tiqav To Misawa (useful Chrome Extension)
 !m<query>
 ```
 
-![](http://i.gyazo.com/aa9abf5ac92c6a6f91bec43da672a428.gif)
+![](https://github.com/fukayatsu/lttm-crx/raw/master/screenshots/aa9abf5ac92c6a6f91bec43da672a428.gif?raw=true)
 
