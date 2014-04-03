@@ -1,3 +1,15 @@
+.atwho-view {
+  max-width: 752px;
+}
+
+.atwho-view ul li {
+  float:  left;
+  width:  150px;
+  height: 150px;
+}
 .atwho-view ul li img{
-  max-height: 80px;
+  list-style: none;
+  max-width:  100%;
+  max-height: 100%;
+  height: auto;
 }
