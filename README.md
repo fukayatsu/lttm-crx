@@ -10,7 +10,7 @@ Looks Tiqav To Misawa (useful Chrome Extension)
 
 Select image with ↑/↓(Ctrl + p/n), then hit Enter or Tab to complete
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jFr1A2a_eeI" frameborder="0" allowfullscreen></iframe>
+[![LTTM](http://img.youtube.com/vi/jFr1A2a_eeI/0.jpg)](http://www.youtube.com/watch?v=jFr1A2a_eeI)
 
 # Too many thanks you
 - [ichord/At.js](https://github.com/ichord/At.js)
