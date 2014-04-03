@@ -20,9 +20,15 @@ $('textarea').atwho({
       query = query.slice(1);
 
       if (kind == 'l') {
-        $.getJSON("http://www.lgtm.in/g", function (data) {
-          url = data.imageUrl;
-          callback([{name: url, imageUrl: url, alt: 'LGTM'}]);
+        var task1 = $.getJSON("http://www.lgtm.in/g?"+Math.random()).then();
+        var task2 = $.getJSON("http://www.lgtm.in/g?"+Math.random()).then();
+        var task3 = $.getJSON("http://www.lgtm.in/g?"+Math.random()).then();
+
+        $.when(task1, task2, task3).then(function(a, b, c){
+          images = _.map([a[0], b[0], c[0]], function(data) {
+            return {name: data.imageUrl, imageUrl: data.imageUrl, alt: 'LGTM'}
+          });
+          callback(images);
         });
       } else if (kind == 't') {
         if (query) {
