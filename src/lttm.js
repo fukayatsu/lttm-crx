@@ -1,7 +1,7 @@
 $('textarea').atwho({
   at: "!",
-  tpl: '<li data-value="![${alt}](${imageUrl})"><img src="${imageUrl}" max-width="100px"></li>',
-  limit: 4,
+  tpl: '<li data-value="![${alt}](${imageUrl})"><img src="${imageUrl}" /></li>',
+  limit: 10,
   display_timeout: 1000,
   search_key: null,
   callbacks: {
