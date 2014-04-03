@@ -55,7 +55,7 @@ $('textarea').atwho({
           var boys = [];
           if (query) {
             boys = _.filter(data, function(n) {
-              (n.title && n.title.indexOf(query) > -1) || (n.body  && n.body.indexOf(query) > -1)
+              return (n.title && n.title.indexOf(query) > -1) || (n.body  && n.body.indexOf(query) > -1)
             });
           } else {
             boys = _.sample(data, 20);
