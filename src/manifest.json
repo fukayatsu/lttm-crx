@@ -18,6 +18,7 @@
         "jquery-2.1.0.min.js",
         "jquery.caret.min.js",
         "jquery.atwho.js",
+        "underscore-min.js",
         "xregexp-all-min.js",
         "lttm.js"
       ]
