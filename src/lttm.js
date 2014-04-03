@@ -24,22 +24,36 @@ $('textarea').atwho({
           url = data.imageUrl;
           callback([{name: url, imageUrl: url, alt: 'LGTM'}]);
         });
-      } else if (kind == 't' && query) {
-        $.getJSON("http://api.tiqav.com/search.json", {q: query}, function (data) {
-          images = [];
-          $.each(data, function(k, v){
-            url = 'http://tiqav.com/' + v.id + '.' + v.ext;
-            images.push({name: url, imageUrl: url, alt: 'tiqav'});
+      } else if (kind == 't') {
+        if (query) {
+          $.getJSON("http://api.tiqav.com/search.json", {q: query}, function (data) {
+            images = [];
+            $.each(data, function(k, v){
+              url = 'http://tiqav.com/' + v.id + '.' + v.ext;
+              images.push({name: url, imageUrl: url, alt: 'tiqav'});
+            });
+            callback(images);
           });
-          callback(images);
-        });
-      } else if (kind == 'm' && query) {
+        } else {
+          $.getJSON("http://api.tiqav.com/search/random.json", {}, function (data) {
+            images = [];
+            $.each(data, function(k, v){
+              url = 'http://tiqav.com/' + v.id + '.' + v.ext;
+              images.push({name: url, imageUrl: url, alt: 'tiqav'});
+            });
+            callback(images);
+          });
+        }
+      } else if (kind == 'm') {
         $.getJSON(chrome.extension.getURL('/meigens.json'), function (data) {
-          boys = $.grep(data, function(n, i) {
-            if (n.title && n.title.indexOf(query) > -1) { return true; }
-            if (n.body  && n.body.indexOf(query) > -1)  { return true; }
-            return false;
-          });
+          var boys = [];
+          if (query) {
+            boys = _.filter(data, function(n) {
+              (n.title && n.title.indexOf(query) > -1) || (n.body  && n.body.indexOf(query) > -1)
+            });
+          } else {
+            boys = _.sample(data, 20);
+          }
           images = [];
           $.each(boys, function(k, v){
             images.push({name: v.image, imageUrl: v.image, alt: 'ミサワ'});
