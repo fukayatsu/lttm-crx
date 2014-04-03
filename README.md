@@ -12,7 +12,7 @@ Select image with ↑/↓(Ctrl + p/n), then hit Enter or Tab to complete
 
 [![LTTM](http://img.youtube.com/vi/jFr1A2a_eeI/0.jpg)](http://www.youtube.com/watch?v=jFr1A2a_eeI)
 
-# Too many thanks you
+# Thanks!
 - [ichord/At.js](https://github.com/ichord/At.js)
     - nice auto completion
 - [LGTM.in/g](http://www.lgtm.in/)
