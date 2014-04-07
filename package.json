@@ -1,0 +1,38 @@
+{
+  "name": "lttm-crx",
+  "version": "0.1.0",
+  "description": "Looks Tiqav To Misawa",
+  "scripts": {
+    "test": "gulp spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fukayatsu/lttm-crx.git"
+  },
+  "keywords": [
+    "github",
+    "markdown",
+    "comment",
+    "autocomplete",
+    "lgtm",
+    "tiqav",
+    "misawa"
+  ],
+  "author": "fukayatsu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fukayatsu/lttm-crx/issues"
+  },
+  "homepage": "https://github.com/fukayatsu/lttm-crx",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-coffee": "^1.4.1",
+    "gulp-concat": "^2.2.0",
+    "gulp-uglify": "^0.2.1",
+    "gulp-zip": "^0.3.3",
+    "coffee-script": "^1.7.1",
+    "gulp-sass": "^0.7.1",
+    "gulp-clean": "^0.2.4",
+    "run-sequence": "^0.3.6"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Looks Tiqav To Misawa",
+  "short_name": "LTTM",
+  "version": "0.1.1",
+  "manifest_version": 2,
+  "description": "ミサワにはちくわぶに見えます",
+  "icons": {
+    "48":  "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": [
+        "css/jquery.atwho.css",
+        "css/lttm.css"
+      ],
+      "js": [
+        "js/jquery-2.1.0.min.js",
+        "js/jquery.caret.min.js",
+        "js/jquery.atwho.js",
+        "js/underscore-min.js",
+        "js/xregexp-all-min.js",
+        "js/lttm.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": ["config/meigens.json"]
+}
