@@ -34,7 +34,7 @@ gulp.task 'clean', ->
     .pipe(clean())
 
 gulp.task 'zip', ->
-  gulp.src('build/*')
+  gulp.src('build/**/*.*')
     .pipe(zip('build.zip'))
     .pipe(gulp.dest('./'))
 
