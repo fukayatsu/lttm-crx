@@ -1,6 +1,6 @@
 $("textarea").atwho
   at: "!"
-  tpl: "<li data-value=\"![${alt}](${imageUrl})\"><img src=\"${imageUrl}\" /></li>"
+  tpl: '<li class="lttm" data-value="![${alt}](${imageUrl})"><img src="${imageUrl}" /></li>'
   limit: 10
   display_timeout: 1000
   search_key: null
