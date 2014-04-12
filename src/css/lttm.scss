@@ -1,14 +1,19 @@
 .atwho-view {
-  max-width: 752px;
+  box-sizing: border-box;
+  max-width: 755px;
 }
 
-.atwho-view ul li {
+.atwho-view ul li.lttm {
+  box-sizing: border-box;
+  padding: 5;
   float:  left;
   width:  150px;
   height: 150px;
 }
 
-.atwho-view ul li img{
+.atwho-view ul li.lttm img{
+  box-sizing: border-box;
+  padding: 0;
   list-style: none;
   max-width:  100%;
   max-height: 100%;
