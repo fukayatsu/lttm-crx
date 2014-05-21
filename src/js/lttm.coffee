@@ -1,7 +1,7 @@
 $("textarea").atwho
   at: "!"
   tpl: '<li class="lttm" data-value="![${alt}](${imageUrl})"><img src="${imageUrl}" /></li>'
-  limit: 10
+  limit: 40
   display_timeout: 1000
   search_key: null
   callbacks:
@@ -63,7 +63,7 @@ $("textarea").atwho
               (n.title and n.title.indexOf(query) > -1) or (n.body and n.body.indexOf(query) > -1)
             )
           else
-            boys = _.sample(data, 20)
+            boys = _.sample(data, 30)
           images = []
           $.each boys, (k, v) ->
             images.push
@@ -71,3 +71,18 @@ $("textarea").atwho
               imageUrl: v.image
               alt: "ミサワ"
           callback images
+
+$(window).on 'keyup.atwhoInner', (ev) ->
+  setTimeout ->
+    $currentItem =  $('.atwho-view .cur')
+    return if $currentItem.length == 0
+
+    $parent = $($currentItem.parents('.atwho-view')[0])
+    offset = Math.floor($currentItem.offset().top - $parent.offset().top) - 1
+
+    if (offset < 0) || (offset > 250)
+      setTimeout ->
+        offset = Math.floor($currentItem.offset().top - $parent.offset().top) - 1
+        row    = Math.floor(offset / 150)
+        $parent.scrollTop($parent.scrollTop() + row * 150 - 75)
+      , 100
