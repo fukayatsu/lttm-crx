@@ -26,3 +26,5 @@ Select image with ↑/↓(Ctrl + p/n), then hit Enter or Tab to complete
 - [jQuery](http://jquery.com/)
 - [GitHub](https://github.com/)
 - [Chrome Web Store](https://chrome.google.com/webstore/category/apps)
+- [SUSHI-YUKI(寿司ゆき)](https://store.line.me/stickershop/detail?packageId=1000037)
+    - Copyright (c) 2014 [awayuki](https://github.com/awayuki). All rights reserved.
