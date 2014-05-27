@@ -71,6 +71,15 @@ $("textarea").atwho
               imageUrl: v.image
               alt: "ミサワ"
           callback images
+      else if kind is 's'
+        images = []
+        _.each _.range(1, 41), (num) ->
+          images.push
+            name:     "https://d1zd1v0cxnbx2w.cloudfront.net/images/sets/sushiyuki/#{("0"+num).slice(-2)}.png"
+            imageUrl: "https://d1zd1v0cxnbx2w.cloudfront.net/images/sets/sushiyuki/#{("0"+num).slice(-2)}.png"
+            alt:      "寿司ゆき"
+        callback images
+
 
 $(window).on 'keyup.atwhoInner', (ev) ->
   setTimeout ->
