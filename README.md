@@ -7,6 +7,7 @@ Looks Tiqav To Misawa (useful Chrome Extension)
 - LGTM: `!l or !ll...`
 - tiqav: `!t<query>`
 - misawa: `!m<query>`
+- SUSHI-YUKI(寿司ゆき): `!s`
 
 Select image with ↑/↓(Ctrl + p/n), then hit Enter or Tab to complete
 
