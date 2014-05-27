@@ -71,6 +71,15 @@ $("textarea").atwho
               imageUrl: v.image
               alt: "ミサワ"
           callback images
+      else if kind is 's'
+        images = []
+        _.each _.range(17103, 17143), (num) ->
+          images.push
+            name:     "http://www.stampers.me/tmp/stamp_image/#{num}/thumb150ml_preview.png"
+            imageUrl: "http://www.stampers.me/tmp/stamp_image/#{num}/thumb150ml_preview.png"
+            alt:      "寿司ゆき"
+        callback images
+
 
 $(window).on 'keyup.atwhoInner', (ev) ->
   setTimeout ->
