@@ -73,7 +73,7 @@ $("textarea").atwho
           callback images
       else if kind is 's'
         images = []
-        _.each _.range(0, 41), (num) ->
+        _.each _.range(1, 41), (num) ->
           images.push
             name:     "https://d1zd1v0cxnbx2w.cloudfront.net/images/sets/sushiyuki/#{("0"+num).slice(-2)}.png"
             imageUrl: "https://d1zd1v0cxnbx2w.cloudfront.net/images/sets/sushiyuki/#{("0"+num).slice(-2)}.png"
