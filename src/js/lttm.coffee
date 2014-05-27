@@ -73,10 +73,10 @@ $("textarea").atwho
           callback images
       else if kind is 's'
         images = []
-        _.each _.range(17103, 17143), (num) ->
+        _.each _.range(0, 41), (num) ->
           images.push
-            name:     "http://www.stampers.me/tmp/stamp_image/#{num}/thumb150ml_preview.png"
-            imageUrl: "http://www.stampers.me/tmp/stamp_image/#{num}/thumb150ml_preview.png"
+            name:     "https://d1zd1v0cxnbx2w.cloudfront.net/images/sets/sushiyuki/#{("0"+num).slice(-2)}.png"
+            imageUrl: "https://d1zd1v0cxnbx2w.cloudfront.net/images/sets/sushiyuki/#{("0"+num).slice(-2)}.png"
             alt:      "寿司ゆき"
         callback images
 
