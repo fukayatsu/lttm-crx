@@ -48,7 +48,8 @@ $("textarea").atwho
         if query
           $.getJSON "https://ajax.googleapis.com/ajax/services/search/images",
             v: '1.0',
-            q: query
+            q: query,
+            rsz: 'large'
           , (data) ->
             images = []
             $.each data['responseData']['results'], (k, v) ->
