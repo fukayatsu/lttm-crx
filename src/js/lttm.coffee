@@ -44,15 +44,19 @@ $("textarea").atwho
                 alt: "tiqav"
             callback images
 
-        else
-          $.getJSON "http://api.tiqav.com/search/random.json", {}, (data) ->
+      else if kind is "g"
+        if query
+          $.getJSON "https://ajax.googleapis.com/ajax/services/search/images",
+            v: '1.0',
+            q: query
+          , (data) ->
             images = []
-            $.each data, (k, v) ->
-              url = "http://tiqav.com/" + v.id + "." + v.ext
+            $.each data['responseData']['results'], (k, v) ->
+              url = v['tbUrl']
               images.push
                 name: url
                 imageUrl: url
-                alt: "tiqav"
+                alt: v['titleNoFormatting']
             callback images
 
       else if kind is "m"
