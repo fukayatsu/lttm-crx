@@ -8,6 +8,7 @@ Looks Tiqav To Misawa (useful Chrome Extension)
 - tiqav: `!t<query>`
 - misawa: `!m<query>`
 - google: `!g<query>`
+    - Google Image Search API has been deprecated.
 - SUSHI-YUKI(寿司ゆき): `!s`
 
 Select image with ↑/↓(Ctrl + p/n), then hit Enter or Tab to complete
@@ -30,3 +31,5 @@ Select image with ↑/↓(Ctrl + p/n), then hit Enter or Tab to complete
 - [Chrome Web Store](https://chrome.google.com/webstore/category/apps)
 - [SUSHI-YUKI(寿司ゆき)](https://store.line.me/stickershop/detail?packageId=1000037)
     - Copyright (c) 2014 [awayuki](https://github.com/awayuki). All rights reserved.
+- [shao1555 (Sho Sawada)](https://github.com/shao1555)
+    - [add Google Image Search feature #35](https://github.com/fukayatsu/lttm-crx/pull/35)
