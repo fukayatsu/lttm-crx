@@ -53,7 +53,7 @@ $("textarea").atwho
           , (data) ->
             images = []
             $.each data['responseData']['results'], (k, v) ->
-              url = v['tbUrl']
+              url = v['url']
               images.push
                 name: url
                 imageUrl: url
