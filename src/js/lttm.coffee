@@ -1,6 +1,6 @@
 $("textarea").atwho
   at: "!"
-  tpl: '<li class="lttm" data-value="![${alt}](${imageUrl})"><img src="${imageUrl}" /></li>'
+  tpl: '<li class="lttm" data-value="![${alt}](${imageUrl})"><img src="${imagePreviewUrl}" /></li>'
   limit: 40
   display_timeout: 1000
   search_key: null
@@ -27,6 +27,7 @@ $("textarea").atwho
           ], (data) ->
             name: data.imageUrl
             imageUrl: data.imageUrl
+            imagePreviewUrl: data.imageUrl
             alt: "LGTM"
           )
           callback images
@@ -41,6 +42,7 @@ $("textarea").atwho
               images.push
                 name: url
                 imageUrl: url
+                imagePreviewUrl: url
                 alt: "tiqav"
             callback images
 
@@ -52,12 +54,13 @@ $("textarea").atwho
             rsz: 'large'
           , (data) ->
             images = []
-            $.each data['responseData']['results'], (k, v) ->
-              url = v['url']
+            $.each data.responseData.results, (k, v) ->
+              url = v.url
               images.push
-                name: url
-                imageUrl: url
-                alt: v['titleNoFormatting']
+                name: v.url
+                imageUrl: v.url
+                imagePreviewUrl: v.tbUrl
+                alt: v.titleNoFormatting
             callback images
 
       else if kind is "m"
@@ -74,6 +77,7 @@ $("textarea").atwho
             images.push
               name: v.image
               imageUrl: v.image
+              imagePreviewUrl: v.image
               alt: "ミサワ"
           callback images
       else if kind is 's'
@@ -82,6 +86,7 @@ $("textarea").atwho
           images.push
             name:     "https://d1zd1v0cxnbx2w.cloudfront.net/images/sets/sushiyuki/#{("0"+num).slice(-2)}.png"
             imageUrl: "https://d1zd1v0cxnbx2w.cloudfront.net/images/sets/sushiyuki/#{("0"+num).slice(-2)}.png"
+            imagePreviewUrl: "https://d1zd1v0cxnbx2w.cloudfront.net/images/sets/sushiyuki/#{("0"+num).slice(-2)}.png"
             alt:      "寿司ゆき"
         callback images
 
