@@ -29,7 +29,7 @@ Select image with ↑/↓(Ctrl + p/n), then hit Enter or Tab to complete
 - [jQuery](http://jquery.com/)
 - [GitHub](https://github.com/)
 - [Chrome Web Store](https://chrome.google.com/webstore/category/apps)
-- [SUSHI-YUKI(寿司ゆき)](https://store.line.me/stickershop/detail?packageId=1000037)
-    - Copyright (c) 2014 [awayuki](https://github.com/awayuki). All rights reserved.
+- [SUSHIYUKI(寿司ゆき)](http://awayuki.net/sushiyuki/)
+    - Copyright (c) 2014 [awayuki](https://github.com/awayuki). (CC BY-NC-ND 4.0)
 - [shao1555 (Sho Sawada)](https://github.com/shao1555)
     - [add Google Image Search feature #35](https://github.com/fukayatsu/lttm-crx/pull/35)
