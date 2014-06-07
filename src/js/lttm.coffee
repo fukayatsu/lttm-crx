@@ -6,7 +6,7 @@ $("textarea").atwho
   search_key: null
   callbacks:
     matcher: (flag, subtext) ->
-      regexp = new XRegExp("(\\s+|^)" + flag + "(\\p{L}+)$", "gi")
+      regexp = new XRegExp("(\\s+|^)" + flag + "([\\p{L}_-]+)$", "gi")
       match = regexp.exec(subtext)
       return null  unless match and match.length >= 2
       match[2]
@@ -81,14 +81,26 @@ $("textarea").atwho
               alt: "ミサワ"
           callback images
       else if kind is 's'
-        images = []
-        _.each _.range(1, 41), (num) ->
-          images.push
-            name:     "https://d1zd1v0cxnbx2w.cloudfront.net/images/sets/sushiyuki/#{("0"+num).slice(-2)}.png"
-            imageUrl: "https://d1zd1v0cxnbx2w.cloudfront.net/images/sets/sushiyuki/#{("0"+num).slice(-2)}.png"
-            imagePreviewUrl: "https://d1zd1v0cxnbx2w.cloudfront.net/images/sets/sushiyuki/#{("0"+num).slice(-2)}.png"
-            alt:      "寿司ゆき"
-        callback images
+        $.getJSON chrome.extension.getURL("/config/sushi_list.json"), (data) ->
+          sushiList = []
+          if query
+            sushiList = _.filter(data, (sushi) ->
+              !!_.find(sushi.keywords, (keyword) ->
+                keyword.indexOf(query) == 0
+              )
+            )
+          else
+            sushiList = data
+
+          images = []
+          _.each(sushiList, (sushi) ->
+            images.push
+              name: sushi.url
+              imageUrl: sushi.url
+              imagePreviewUrl: sushi.url
+              alt: "寿司ゆき:#{sushi.keywords[0]}"
+          )
+          callback images
 
 
 $(window).on 'keyup.atwhoInner', (ev) ->

@@ -1,7 +1,7 @@
 {
   "name": "LTTM",
   "short_name": "LTTM",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "manifest_version": 2,
   "description": "Looks Tiqav To Misawa",
   "icons": {
@@ -27,6 +27,7 @@
   ],
   "web_accessible_resources": [
     "config/meigens.json",
+    "config/sushi_list.json",
     "js/underscore-min.map"
   ]
 }
