@@ -1,4 +1,4 @@
-$("textarea").atwho
+atwhoOptions =
   at: "!"
   tpl: '<li class="lttm" data-value="![${alt}](${imageUrl})"><img src="${imagePreviewUrl}" /></li>'
   limit: 40
@@ -102,6 +102,14 @@ $("textarea").atwho
           )
           callback images
 
+$ ->
+  $("textarea").atwho(atwhoOptions)
+
+# for line comment on github
+$(window).on 'click', '.add-line-comment', (ev) ->
+  setTimeout ->
+    $("textarea").atwho(atwhoOptions)
+  , 1000
 
 $(window).on 'keyup.atwhoInner', (ev) ->
   setTimeout ->
