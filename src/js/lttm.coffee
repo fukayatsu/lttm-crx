@@ -106,12 +106,12 @@ $ ->
   $("textarea").atwho(atwhoOptions)
 
 # for line comment on github
-$(window).on 'click', '.add-line-comment', (ev) ->
+$(document).on 'click', '.add-line-comment', (ev) ->
   setTimeout ->
     $("textarea").atwho(atwhoOptions)
   , 1000
 
-$(window).on 'keyup.atwhoInner', (ev) ->
+$(document).on 'keyup.atwhoInner', (ev) ->
   setTimeout ->
     $currentItem =  $('.atwho-view .cur')
     return if $currentItem.length == 0
