@@ -25,9 +25,9 @@ atwhoOptions =
             b[0]
             c[0]
           ], (data) ->
-            name: data.imageUrl
-            imageUrl: data.imageUrl
-            imagePreviewUrl: data.imageUrl
+            name:            data.actualImageUrl
+            imageUrl:        data.actualImageUrl
+            imagePreviewUrl: data.actualImageUrl
             alt: "LGTM"
           )
           callback images
