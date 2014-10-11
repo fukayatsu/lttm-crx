@@ -15,6 +15,15 @@ Select image with ↑/↓(Ctrl + p/n), then hit Enter or Tab to complete
 
 [![LTTM](http://img.youtube.com/vi/jFr1A2a_eeI/0.jpg)](http://www.youtube.com/watch?v=jFr1A2a_eeI)
 
+# Development
+
+```
+$ npm install
+$ npm run watch
+```
+
+And then drag and drop `build` dir into chrome://extensions/
+
 # Thanks!
 - [ichord/At.js](https://github.com/ichord/At.js)
     - nice auto completion
