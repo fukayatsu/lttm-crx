@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "Looks Tiqav To Misawa",
   "scripts": {
-    "test": "gulp spec"
+    "build":   "gulp build",
+    "rebuild": "gulp rebuild",
+    "release": "gulp release",
+    "watch":   "gulp default"
   },
   "repository": {
     "type": "git",
