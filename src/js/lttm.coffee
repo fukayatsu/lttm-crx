@@ -33,12 +33,12 @@ atwhoOptions =
           callback images
       else if kind is "t"
         if query
-          $.getJSON "http://api.tiqav.com/search.json",
+          $.getJSON "https://d942scftf40wm.cloudfront.net/search.json",
             q: query
           , (data) ->
             images = []
             $.each data, (k, v) ->
-              url = "http://tiqav.com/" + v.id + "." + v.ext
+              url = "https://img.tiqav.com/" + v.id + "." + v.ext
               images.push
                 name: url
                 imageUrl: url
