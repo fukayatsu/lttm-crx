@@ -74,10 +74,11 @@ atwhoOptions =
             boys = _.sample(data, 30)
           images = []
           $.each boys, (k, v) ->
+            image = v.image.replace('http://livedoor.blogimg.jp', 'http://livedoor.4.blogimg.jp')
             images.push
-              name: v.image
-              imageUrl: v.image
-              imagePreviewUrl: v.image
+              name: image
+              imageUrl: image
+              imagePreviewUrl: image
               alt: "ミサワ"
           callback images
       else if kind is 's'
