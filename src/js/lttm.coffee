@@ -16,9 +16,9 @@ atwhoOptions =
       kind = query[0].toLowerCase()
       query = query.slice(1)
       if kind is "l"
-        task1 = $.getJSON("http://www.lgtm.in/g?" + Math.random()).then()
-        task2 = $.getJSON("http://www.lgtm.in/g?" + Math.random()).then()
-        task3 = $.getJSON("http://www.lgtm.in/g?" + Math.random()).then()
+        task1 = $.getJSON("https://d1zktzrq1775k6.cloudfront.net/g?" + Math.random()).then()
+        task2 = $.getJSON("https://d1zktzrq1775k6.cloudfront.net/g?" + Math.random()).then()
+        task3 = $.getJSON("https://d1zktzrq1775k6.cloudfront.net/g?" + Math.random()).then()
         $.when(task1, task2, task3).then (a, b, c) ->
           images = _.map([
             a[0]
