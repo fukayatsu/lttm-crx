@@ -103,14 +103,10 @@ atwhoOptions =
           )
           callback images
 
-$ ->
-  $("textarea").atwho(atwhoOptions)
-
-# for line comment on github
-$(document).on 'click', '.add-line-comment', (ev) ->
-  setTimeout ->
-    $("textarea").atwho(atwhoOptions)
-  , 1000
+$(document).on 'focusin', (ev) ->
+  $this = $ ev.target
+  return unless $this.is 'textarea'
+  $this.atwho atwhoOptions
 
 $(document).on 'keyup.atwhoInner', (ev) ->
   setTimeout ->
