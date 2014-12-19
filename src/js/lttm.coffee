@@ -1,7 +1,7 @@
 atwhoOptions =
   at: "!"
   tpl: '<li class="lttm" data-value="![${alt}](${imageUrl})"><img src="${imagePreviewUrl}" /></li>'
-  limit: 40
+  limit: 80
   display_timeout: 1000
   search_key: null
   callbacks:
