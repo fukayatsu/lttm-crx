@@ -102,6 +102,27 @@ atwhoOptions =
               alt: "寿司ゆき:#{sushi.keywords[0]}"
           )
           callback images
+      else if kind is 'j'
+        $.getJSON chrome.extension.getURL("/config/js_girls.json"), (data) ->
+          js_girls = []
+          if query
+            js_girls = _.filter(data, (js_girl) ->
+              !!_.find(js_girl.keywords, (keyword) ->
+                keyword.indexOf(query) == 0
+              )
+            )
+          else
+            js_girls = data
+
+          images = []
+          _.each(js_girls, (js_girl) ->
+            images.push
+              name: js_girl.url
+              imageUrl: js_girl.url
+              imagePreviewUrl: js_girl.url
+              alt: "JS Girls:#{js_girl.keywords[0]}"
+          )
+          callback images
 
 $(document).on 'focusin', (ev) ->
   $this = $ ev.target
