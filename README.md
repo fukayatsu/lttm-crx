@@ -10,6 +10,7 @@ Looks Tiqav To Misawa (useful Chrome Extension)
 - google: `!g<query>`
     - Google Image Search API has been deprecated.
 - SUSHI-YUKI(寿司ゆき): `!s`
+- JS Girls: `!j<query>`
 
 Select image with ↑/↓(Ctrl + p/n), then hit Enter or Tab to complete
 
@@ -42,3 +43,5 @@ And then drag and drop `build` dir into chrome://extensions/
     - Copyright (c) 2014 [awayuki](https://github.com/awayuki). (CC BY-NC-ND 4.0)
 - [shao1555 (Sho Sawada)](https://github.com/shao1555)
     - [add Google Image Search feature #35](https://github.com/fukayatsu/lttm-crx/pull/35)
+- [tomo-e (tomo_e)](https://github.com/tomo-e)
+    - [add js-girls by tomo-e · Pull Request #48 · fukayatsu/lttm-crx](https://github.com/fukayatsu/lttm-crx/pull/48)

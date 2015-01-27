@@ -28,6 +28,7 @@
   "web_accessible_resources": [
     "config/meigens.json",
     "config/sushi_list.json",
+    "config/js_girls.json",
     "js/underscore-min.map"
   ]
 }
