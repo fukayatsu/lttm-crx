@@ -5,6 +5,8 @@ clean       = require 'gulp-clean'
 zip         = require 'gulp-zip'
 runSequence = require 'run-sequence'
 download    = require 'gulp-download'
+Octokat     = require 'octokat'
+fs          = require 'fs'
 
 paths =
   lib: 'lib/**/*.*'
@@ -15,9 +17,22 @@ gulp.task 'copy', ->
   gulp.src(paths.lib)
     .pipe(gulp.dest('build/'))
 
-gulp.task 'download', ->
-  download('http://horesase-boys.herokuapp.com/meigens.json')
-    .pipe(gulp.dest("lib/config"))
+gulp.task 'download:misawa', ->
+  # download('http://horesase-boys.herokuapp.com/meigens.json')
+  #   .pipe(gulp.dest("lib/config"))
+
+gulp.task 'download:decomoji', (done) ->
+  octo = new Octokat()
+  repo = octo.repos('oti', 'slack-reaction-decomoji')
+  images = []
+  repo.contents('dist').fetch (err, contents) ->
+    for content in contents
+      images.push
+        url: content.downloadUrl
+        keywords: [content.name.split('.')[0]]
+
+    fs.writeFileSync "lib/config/decomoji.json", JSON.stringify(images)
+    done()
 
 gulp.task 'coffee', ->
   gulp.src(paths.js)
@@ -43,7 +58,8 @@ gulp.task 'zip', ->
     .pipe(zip('build.zip'))
     .pipe(gulp.dest('./'))
 
-gulp.task 'build',   ['copy', 'download', 'coffee', 'sass']
+gulp.task 'download', ['download:misawa', 'download:decomoji']
+gulp.task 'build',    ['copy', 'download', 'coffee', 'sass']
 gulp.task 'rebuild', -> runSequence('clean', 'build')
 gulp.task 'release', -> runSequence('clean', 'build', 'zip')
 gulp.task 'default', -> runSequence('clean', 'build', 'watch')

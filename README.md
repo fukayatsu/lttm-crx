@@ -45,3 +45,5 @@ And then drag and drop `build` dir into chrome://extensions/
     - [add Google Image Search feature #35](https://github.com/fukayatsu/lttm-crx/pull/35)
 - [tomo-e (tomo_e)](https://github.com/tomo-e)
     - [add js-girls by tomo-e · Pull Request #48 · fukayatsu/lttm-crx](https://github.com/fukayatsu/lttm-crx/pull/48)
+- [oti (oti)](https://github.com/oti)
+    - [oti/slack-reaction-decomoji](https://github.com/oti/slack-reaction-decomoji) (CC BY-NC)
