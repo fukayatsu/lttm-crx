@@ -18,8 +18,8 @@ gulp.task 'copy', ->
     .pipe(gulp.dest('build/'))
 
 gulp.task 'download:misawa', ->
-  # download('http://horesase-boys.herokuapp.com/meigens.json')
-  #   .pipe(gulp.dest("lib/config"))
+  download('http://horesase.github.io/horesase-boys/meigens.json')
+   .pipe(gulp.dest("lib/config"))
 
 gulp.task 'download:decomoji', (done) ->
   octo = new Octokat()
