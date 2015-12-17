@@ -30,6 +30,7 @@
     "config/sushi_list.json",
     "config/js_girls.json",
     "config/decomoji.json",
+    "config/sushidot.json",
     "js/underscore-min.map"
   ]
 }

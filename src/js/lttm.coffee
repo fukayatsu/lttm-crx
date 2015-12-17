@@ -145,6 +145,27 @@ atwhoOptions =
                 alt: ":#{decomoji.keywords[0]}"
             )
             callback images
+        when kind is 'r'
+          $.getJSON chrome.extension.getURL("/config/sushidot.json"), (data) ->
+            sushidots = []
+            if query
+              sushidots = _.filter(data, (js_girl) ->
+                !!_.find(js_girl.keywords, (keyword) ->
+                  keyword.indexOf(query) == 0
+                )
+              )
+            else
+              sushidots = data
+
+            images = []
+            _.each(sushidots, (sushidot) ->
+              images.push
+                name: sushidot.url
+                imageUrl: sushidot.url
+                imagePreviewUrl: sushidot.url
+                alt: ":#{sushidot.keywords[0]}"
+            )
+            callback images
 
 $(document).on 'focusin', (ev) ->
   $this = $ ev.target

@@ -47,3 +47,5 @@ And then drag and drop `build` dir into chrome://extensions/
     - [add js-girls by tomo-e · Pull Request #48 · fukayatsu/lttm-crx](https://github.com/fukayatsu/lttm-crx/pull/48)
 - [oti (oti)](https://github.com/oti)
     - [oti/slack-reaction-decomoji](https://github.com/oti/slack-reaction-decomoji) (CC BY-NC)
+- [RubyKaigi 2015](http://rubykaigi.org/2015)
+  - [Goodies - RubyKaigi 2015](http://rubykaigi.org/2015/goodies) (CC BY 3.0)

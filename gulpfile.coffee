@@ -34,6 +34,19 @@ gulp.task 'download:decomoji', (done) ->
     fs.writeFileSync "lib/config/decomoji.json", JSON.stringify(images)
     done()
 
+gulp.task 'download:sushidot', (done) ->
+  octo = new Octokat()
+  repo = octo.repos('fukayatsu', 'lttm-crx')
+  images = []
+  repo.contents('vendor/sushidot').fetch (err, contents) ->
+    for content in contents
+      images.push
+        url: content.downloadUrl
+        keywords: [content.name.split('.')[0]]
+
+    fs.writeFileSync "lib/config/sushidot.json", JSON.stringify(images)
+    done()
+
 gulp.task 'coffee', ->
   gulp.src(paths.js)
     .pipe(coffee())
@@ -58,7 +71,11 @@ gulp.task 'zip', ->
     .pipe(zip('build.zip'))
     .pipe(gulp.dest('./'))
 
-gulp.task 'download', ['download:misawa', 'download:decomoji']
+gulp.task 'download', [
+  'download:misawa',
+  'download:decomoji',
+  'download:sushidot'
+]
 gulp.task 'build',    ['copy', 'download', 'coffee', 'sass']
 gulp.task 'rebuild', -> runSequence('clean', 'build')
 gulp.task 'release', -> runSequence('clean', 'build', 'zip')
