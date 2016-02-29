@@ -17,10 +17,10 @@ atwhoOptions =
       query = query.slice(1)
       switch
         when kind is "l"
-          if location.host == 'github.com'
+          if location.protocol = "https:"
             url = 'https://lttm-ssl.herokuapp.com/lgtm'
           else
-            url = 'http://lgtm.in/g'
+            url = 'http://www.lgtm.in/g'
           task1 = $.getJSON(url + '?' + Math.random()).then()
           task2 = $.getJSON(url + '?' + Math.random()).then()
           task3 = $.getJSON(url + '?' + Math.random()).then()
