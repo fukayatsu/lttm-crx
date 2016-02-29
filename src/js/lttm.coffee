@@ -17,7 +17,7 @@ atwhoOptions =
       query = query.slice(1)
       switch
         when kind is "l"
-          if location.protocol = "https:"
+          if location.protocol == "https:"
             url = 'https://lttm-ssl.herokuapp.com/lgtm'
           else
             url = 'http://www.lgtm.in/g'
