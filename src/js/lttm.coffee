@@ -17,18 +17,24 @@ atwhoOptions =
       query = query.slice(1)
       switch
         when kind is "l"
-          task1 = $.getJSON("https://d1zktzrq1775k6.cloudfront.net/g?" + Math.random()).then()
-          task2 = $.getJSON("https://d1zktzrq1775k6.cloudfront.net/g?" + Math.random()).then()
-          task3 = $.getJSON("https://d1zktzrq1775k6.cloudfront.net/g?" + Math.random()).then()
+          if location.host == 'github.com'
+            url = 'https://lttm-ssl.herokuapp.com/lgtm'
+          else
+            url = 'http://lgtm.in/g'
+          task1 = $.getJSON(url + '?' + Math.random()).then()
+          task2 = $.getJSON(url + '?' + Math.random()).then()
+          task3 = $.getJSON(url + '?' + Math.random()).then()
           $.when(task1, task2, task3).then (a, b, c) ->
             images = _.map([
               a[0]
               b[0]
               c[0]
             ], (data) ->
-              name:            data.actualImageUrl
-              imageUrl:        data.actualImageUrl
-              imagePreviewUrl: data.actualImageUrl
+              imageUrl = data.actualImageUrl
+              imageUrl = imageUrl.replace('http://', 'https://') if location.host == 'github.com'
+              name:            imageUrl
+              imageUrl:        imageUrl
+              imagePreviewUrl: imageUrl
               alt: "LGTM"
             )
             callback images
@@ -75,7 +81,9 @@ atwhoOptions =
               boys = _.sample(data, 30)
             images = []
             $.each boys, (k, v) ->
-              image = v.image.replace('http://livedoor.blogimg.jp', 'http://livedoor.4.blogimg.jp')
+              image = v.image
+                .replace('http://livedoor.blogimg.jp', 'http://livedoor.4.blogimg.jp')
+                .replace('http://livedoor.4.blogimg.jp/jigokuno_misawa/imgs/', 'https://d20qqtosks8wga.cloudfront.net/')
               images.push
                 name: image
                 imageUrl: image
