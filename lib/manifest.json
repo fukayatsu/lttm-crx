@@ -1,7 +1,7 @@
 {
   "name": "LTTM",
   "short_name": "LTTM",
-  "version": "0.2.20",
+  "version": "0.2.21",
   "manifest_version": 2,
   "description": "Looks Tiqav To Misawa",
   "icons": {
@@ -21,6 +21,7 @@
         "js/jquery.atwho.js",
         "js/underscore-min.js",
         "js/xregexp-all-min.js",
+        "js/sha1.js",
         "js/lttm.js"
       ]
     }

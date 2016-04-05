@@ -31,10 +31,9 @@ atwhoOptions =
               c[0]
             ], (data) ->
               imageUrl = data.actualImageUrl
-              imageUrl = imageUrl.replace('http://', 'https://') if location.host == 'github.com'
               name:            imageUrl
               imageUrl:        imageUrl
-              imagePreviewUrl: imageUrl
+              imagePreviewUrl: previewUrl(imageUrl)
               alt: "LGTM"
             )
             callback images
@@ -49,27 +48,9 @@ atwhoOptions =
                 images.push
                   name: url
                   imageUrl: url
-                  imagePreviewUrl: url
+                  imagePreviewUrl: previewUrl(url)
                   alt: "tiqav"
               callback images
-
-        when kind is "g"
-          if query
-            $.getJSON "https://ajax.googleapis.com/ajax/services/search/images",
-              v: '1.0',
-              q: query,
-              rsz: 'large'
-            , (data) ->
-              images = []
-              $.each data.responseData.results, (k, v) ->
-                url = v.url
-                images.push
-                  name: v.url
-                  imageUrl: v.url
-                  imagePreviewUrl: v.tbUrl
-                  alt: v.titleNoFormatting
-              callback images
-
         when kind is "m"
           $.getJSON chrome.extension.getURL("/config/meigens.json"), (data) ->
             boys = []
@@ -87,7 +68,7 @@ atwhoOptions =
               images.push
                 name: image
                 imageUrl: image
-                imagePreviewUrl: image
+                imagePreviewUrl: previewUrl(image)
                 alt: "ミサワ"
             callback images
         when kind is 's'
@@ -174,6 +155,16 @@ atwhoOptions =
                 alt: ":#{sushidot.keywords[0]}"
             )
             callback images
+
+previewUrl = (url) ->
+  return url if location.protocol     == "http:"
+  return url if url.indexOf('https:') == 0
+
+  shaObj = new jsSHA("SHA-1", 'TEXT')
+  shaObj.setHMACKey 'lttmlttm', 'TEXT'
+  shaObj.update url
+  hmac = shaObj.getHMAC('HEX')
+  "https://lttmcamo.herokuapp.com/#{hmac}?url=#{url}"
 
 $(document).on 'focusin', (ev) ->
   $this = $ ev.target

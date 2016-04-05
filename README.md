@@ -7,8 +7,6 @@ Looks Tiqav To Misawa (useful Chrome Extension)
 - LGTM: `!l or !ll...`
 - tiqav: `!t<query>`
 - misawa: `!m<query>`
-- google: `!g<query>`
-    - Google Image Search API has been deprecated.
 - SUSHI-YUKI(寿司ゆき): `!s`
 - JS Girls: `!j<query>`
 
