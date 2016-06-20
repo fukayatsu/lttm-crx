@@ -25,7 +25,7 @@ gulp.task 'download:decomoji', (done) ->
   octo = new Octokat()
   repo = octo.repos('oti', 'slack-reaction-decomoji')
   images = []
-  repo.contents('dist').fetch (err, contents) ->
+  repo.contents('decomoji').fetch (err, contents) ->
     for content in contents
       images.push
         url: content.downloadUrl
