@@ -21,6 +21,10 @@ gulp.task 'download:misawa', ->
   download('http://horesase.github.io/horesase-boys/meigens.json')
    .pipe(gulp.dest("lib/config"))
 
+gulp.task 'download:irasutoya', ->
+  download('https://june29.github.io/irasutoya-data/irasutoya.json')
+   .pipe(gulp.dest("lib/config"))
+
 gulp.task 'download:decomoji', (done) ->
   octo = new Octokat()
   repo = octo.repos('oti', 'slack-reaction-decomoji')
@@ -73,6 +77,7 @@ gulp.task 'zip', ->
 
 gulp.task 'download', [
   'download:misawa',
+  'download:irasutoya',
   'download:decomoji',
   'download:sushidot'
 ]

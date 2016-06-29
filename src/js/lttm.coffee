@@ -71,6 +71,26 @@ atwhoOptions =
                 imagePreviewUrl: previewUrl(image)
                 alt: "ミサワ"
             callback images
+        when kind is "i"
+          $.getJSON chrome.extension.getURL("/config/irasutoya.json"), (data) ->
+            illustrations = []
+            if query
+              illustrations = _.filter(data, (n) ->
+                (n.title?.indexOf(query) > -1) ||
+                (n.description?.indexOf(query) > -1) ||
+                (n.categories && n.categories.join().indexOf(query) > -1)
+              )
+            else
+              illustrations = _.sample(data, 30)
+            images = []
+            $.each illustrations, (k, v) ->
+              image_url = v.image_url.replace('http://', 'https://')
+              images.push
+                name: image_url
+                imageUrl: image_url
+                imagePreviewUrl: previewUrl(image_url)
+                alt: v.title
+            callback images
         when kind is 's'
           $.getJSON chrome.extension.getURL("/config/sushi_list.json"), (data) ->
             sushiList = []
