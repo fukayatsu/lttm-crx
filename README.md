@@ -7,6 +7,7 @@ Looks Tiqav To Misawa (useful Chrome Extension)
 - LGTM: `!l or !ll...`
 - tiqav: `!t<query>`
 - misawa: `!m<query>`
+- irasutoya: `!i<query>`
 - SUSHI-YUKI(寿司ゆき): `!s`
 - JS Girls: `!j<query>`
 
@@ -32,6 +33,8 @@ And then drag and drop `build` dir into chrome://extensions/
     - many unique images for reply
 - [horesa.se](http://horesa.se/)
     - cool horesase-boys a.k.a. JIGOKU NO MISAWA (Misawa in hell)
+- [無料イラスト かわいいフリー素材集 いらすとや](http://www.irasutoya.com/)
+    - [june29/irasutoya-data: Formatted irasutoya data](https://github.com/june29/irasutoya-data)
 - [Twitter](https://twitter.com/)
     - this motivated me: https://twitter.com/fukayatsu/status/449025667561033728
 - [jQuery](http://jquery.com/)
