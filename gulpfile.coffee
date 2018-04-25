@@ -29,14 +29,16 @@ gulp.task 'download:decomoji', (done) ->
   octo = new Octokat()
   repo = octo.repos('oti', 'slack-reaction-decomoji')
   images = []
-  repo.contents('decomoji').fetch (err, contents) ->
+  dirs = ['basic', 'extra']
+  fetchPromises = dirs.map((dir) -> repo.contents("decomoji/#{dir}").fetch())
+  Promise.all(fetchPromises).then (contents) ->
+    contents = [].concat.apply([], contents) # array flatten
     for content in contents
       images.push
         url: content.downloadUrl
         keywords: [content.name.split('.')[0]]
 
     fs.writeFileSync "lib/config/decomoji.json", JSON.stringify(images)
-    done()
 
 gulp.task 'download:sushidot', (done) ->
   octo = new Octokat()
