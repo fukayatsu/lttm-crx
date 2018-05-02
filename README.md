@@ -50,3 +50,5 @@ And then drag and drop `build` dir into chrome://extensions/
     - [oti/slack-reaction-decomoji](https://github.com/oti/slack-reaction-decomoji) (CC BY-NC)
 - [RubyKaigi 2015](http://rubykaigi.org/2015)
   - [Goodies - RubyKaigi 2015](http://rubykaigi.org/2015/goodies) (CC BY 3.0)
+- [こばかな / THE GUILD(@kobaka7)](https://twitter.com/kobaka7)
+  - [エンジニアを褒めるネコ](https://twitter.com/kobaka7/status/937517293604454400)
