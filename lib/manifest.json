@@ -33,6 +33,7 @@
     "config/decomoji.json",
     "config/sushidot.json",
     "config/irasutoya.json",
+    "config/engineer_homeru_neko.json",
     "js/underscore-min.map"
   ]
 }

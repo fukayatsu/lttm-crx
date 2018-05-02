@@ -133,6 +133,27 @@ atwhoOptions =
                 alt: "JS Girls:#{js_girl.keywords[0]}"
             )
             callback images
+        when kind is 'n'
+          $.getJSON chrome.extension.getURL("/config/engineer_homeru_neko.json"), (data) ->
+            source = []
+            if query
+              source = _.filter(data, (js_girl) ->
+                !!_.find(js_girl.keywords, (keyword) ->
+                  keyword.indexOf(query) > -1
+                )
+              )
+            else
+              source = data
+
+            images = []
+            _.each(source, (item) ->
+              images.push
+                name: item.url
+                imageUrl: item.url
+                imagePreviewUrl: item.url
+                alt: "エンジニアを褒めるネコ:#{item.keywords[0]}"
+            )
+            callback images
         when kind is 'd'
           $.getJSON chrome.extension.getURL("/config/decomoji.json"), (data) ->
             decomojis = []

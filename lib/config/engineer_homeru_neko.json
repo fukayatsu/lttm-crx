@@ -1,0 +1,162 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/01_LGTM.png",
+    "keywords": ["LGTM", "lgtm"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/02_%E3%82%B3%E3%83%BC%E3%83%89%E3%81%8C%E3%81%8D%E3%82%8C%E3%81%84%EF%BC%81.png",
+    "keywords": ["コードがきれい！", "code ga kirei!"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/03_HelloWorld.png",
+    "keywords": ["HelloWorld", "hello world"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/04_%E3%81%95%E3%81%99%E3%81%8C%E3%81%A7%E3%81%99.png",
+    "keywords": ["さすがです", "sasuga desu"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/05_%E9%80%B2%E6%8D%97%E3%81%A9%E3%81%86%E3%81%A7%E3%81%99%E3%81%8B.png",
+    "keywords": ["進捗どうですか", "sinchoku doudesuka"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/06_%E9%80%B2%E6%8D%97%E3%83%80%E3%83%A1%E3%81%A7%E3%81%99.png",
+    "keywords": ["進捗ダメです", "sinchoku dame desu"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/07_%E5%AE%9A%E6%99%82%E3%81%82%E3%81%8C%E3%82%8A.png",
+    "keywords": ["定時あがり", "teiji agari"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/08_VR%E5%B8%B0%E5%AE%85.png",
+    "keywords": ["VR帰宅", "vr kitaku", "go home"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/09_%E4%BB%95%E4%BA%8B%E3%81%AF%E3%82%84%E3%81%84.png",
+    "keywords": ["仕事はやい", "sigoto hayai"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/10_%E5%85%83%E6%B0%97%E5%87%BA%E3%81%97%E3%81%A6.png",
+    "keywords": ["元気出して", "genki dasite", "cheer up"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/11_%E7%A5%9E.png",
+    "keywords": ["神", "kami", "god"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/12_%E3%81%99%E3%81%94%E3%81%84.png",
+    "keywords": ["すごい", "sugoi", "amazing"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/13_%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99.png",
+    "keywords": ["ありがとうございます", "arigatougozaimasu", "thank you"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/14_%E3%81%84%E3%81%A4%E3%82%82%E5%8A%A9%E3%81%8B%E3%82%8A%E3%81%BE%E3%81%99%EF%BC%88%E8%AA%A4%E5%AD%97%E6%B3%A8%E6%84%8F%EF%BC%89.png",
+    "keywords": ["いつも助かります（誤字注意）", "tasukarimasu"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/15_%E4%BA%86%E8%A7%A3%E3%81%A7%E3%81%99.png",
+    "keywords": ["了解です", "ryokai desu", "ok"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/16_%E3%81%8A%E3%81%AD%E3%81%8C%E3%81%84%E3%81%97%E3%81%BE%E3%81%99.png",
+    "keywords": ["おねがいします", "onegaisimasu"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/17_%E3%82%84%E3%82%8B%E3%81%97%E3%81%8B%E3%81%AA%E3%81%84.png",
+    "keywords": ["やるしかない", "yarusikanai"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/18_%E3%81%8A%E3%81%99%E3%81%97%E3%81%A9%E3%81%9E.png",
+    "keywords": ["おすしどぞ", "osusi dozo"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/19_%E5%AF%9D%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%8C%E4%BB%8A%E6%97%A5.png",
+    "keywords": ["寝るまでが今日", "nerumade ga kyou"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/20_%E5%84%AA%E5%8B%9D%E3%81%97%E3%81%9F.png",
+    "keywords": ["優勝した", "yusho sita"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/21_%E6%B3%A3.png",
+    "keywords": ["泣", "naki", "cry"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/22_%E3%83%8F%E3%83%BC%E3%83%88.png",
+    "keywords": ["ハート", "heart", "happy"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/23_%E3%82%AA%E3%83%AF%E3%82%BF.png",
+    "keywords": ["オワタ", "owata"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/24_%E3%82%82%E3%81%97%E3%81%8B%E3%81%97%E3%81%A6.png",
+    "keywords": ["もしかして", "mosikasite"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/25_%E3%81%A1%E3%81%88%E3%82%93%E3%81%A7%E9%81%85%E3%82%8C%E3%81%BE%E3%81%99.png",
+    "keywords": ["ちえんで遅れます", "tien de okuremasu"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/26_%E8%87%AA%E5%AE%85%E4%BD%9C%E6%A5%AD%E3%81%97%E3%81%BE%E3%81%99.png",
+    "keywords": ["自宅作業します", "jitaku sagyo simasu", "home work"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/27_%E4%BB%95%E6%A7%98%E3%81%A7%E3%81%99.png",
+    "keywords": ["仕様です", "siyou desu"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/28_%E4%BB%8A%E8%A9%B1%E3%81%97%E3%81%8B%E3%81%91%E3%81%A6%E3%82%82%E5%A4%A7%E4%B8%88%E5%A4%AB%E3%81%8B%E3%81%AA%E2%80%A6.png",
+    "keywords": ["今話しかけても大丈夫かな…", "ima hanasikaketemo daijyoubu kana"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/29_%E3%81%8A%E3%81%A4%E3%81%8B%E3%82%8C%E3%81%95%E3%81%BE.png",
+    "keywords": ["おつかれさま", "otsukaresama"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/30_%E3%82%84%E3%81%99%E3%82%82%E3%81%86.png",
+    "keywords": ["やすもう", "yasumou", "rest"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/31_%E3%81%8A%E3%82%84%E3%81%99%E3%81%BF.png",
+    "keywords": ["おやすみ", "oyasumi", "good night"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/32_%E3%81%BF%E3%81%AE%E3%82%80%E3%81%97.png",
+    "keywords": ["みのむし", "minomusi"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/33_%E3%81%84%E3%81%84%E3%81%AD.png",
+    "keywords": ["いいね", "iine", "good"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/34_%E3%82%B5%E3%82%AF%E9%A3%B2%E3%81%BF%E3%81%97%E3%82%88%E3%81%86.png",
+    "keywords": ["サク飲みしよう", "sakunomi siyou"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/35_%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.png",
+    "keywords": ["リリースしました", "release simasita"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/36_%E3%81%AA%E3%82%8B%E3%81%BB%E3%81%A9%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93.png",
+    "keywords": ["なるほどわからん", "naruhodo", "wakaran"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/37_%E8%89%AF%E3%81%84%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E7%B4%B9%E4%BB%8B%E3%81%97%E3%81%A6.png",
+    "keywords": ["良いエンジニア紹介して", "yoi engineer shokai site"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/38_%E3%81%82%E3%80%81%E8%89%AF%E3%81%84%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2.png",
+    "keywords": ["あ、良いエンジニア", "yoi engineer da"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/39_%E5%B9%B4%E6%A3%925%E5%84%84.png",
+    "keywords": ["年棒5億", "nenpou 5oku"]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fukayatsu/lttm-crx/master/vendor/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%82%92%E8%A4%92%E3%82%81%E3%82%8B%E3%83%8D%E3%82%B3/40_%E3%81%9D%E3%82%8C%E3%81%A7%E3%81%AF%E3%80%81%E8%89%AF%E3%81%84%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%A9%E3%82%A4%E3%83%95%E3%82%92%E3%80%82.png",
+    "keywords": ["それでは、良いエンジニアライフを。", "soredewa yoi engineer life wo", "good engineer life"]
+  }
+]

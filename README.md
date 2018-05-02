@@ -10,6 +10,7 @@ Looks Tiqav To Misawa (useful Chrome Extension)
 - irasutoya: `!i<query>`
 - SUSHI-YUKI(寿司ゆき): `!s`
 - JS Girls: `!j<query>`
+- エンジニアを褒めるネコ: `!n<query>`
 
 Select image with ↑/↓(Ctrl + p/n), then hit Enter or Tab to complete
 
