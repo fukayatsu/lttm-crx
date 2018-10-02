@@ -62,9 +62,7 @@ atwhoOptions =
               boys = _.sample(data, 30)
             images = []
             $.each boys, (k, v) ->
-              image = v.image
-                .replace('http://livedoor.blogimg.jp', 'http://livedoor.4.blogimg.jp')
-                .replace('http://livedoor.4.blogimg.jp/jigokuno_misawa/imgs/', 'https://d20qqtosks8wga.cloudfront.net/')
+              image = v.image.replace('http://', 'https://')
               images.push
                 name: image
                 imageUrl: image
