@@ -46,7 +46,7 @@ gulp.task 'download:sushidot', (done) ->
   repo = octo.repos('fukayatsu', 'lttm-crx')
   images = []
   repo.contents('vendor/sushidot').fetch (err, contents) ->
-    for content in contents
+    for content in contents.items
       images.push
         url: content.downloadUrl
         keywords: [content.name.split('.')[0]]
