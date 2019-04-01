@@ -95,7 +95,7 @@ atwhoOptions =
             if query
               sushiList = _.filter(data, (sushi) ->
                 !!_.find(sushi.keywords, (keyword) ->
-                  keyword.indexOf(query) == 0
+                  keyword.indexOf(query) > -1
                 )
               )
             else
@@ -116,7 +116,7 @@ atwhoOptions =
             if query
               js_girls = _.filter(data, (js_girl) ->
                 !!_.find(js_girl.keywords, (keyword) ->
-                  keyword.indexOf(query) == 0
+                  keyword.indexOf(query) > -1
                 )
               )
             else
@@ -158,7 +158,7 @@ atwhoOptions =
             if query
               decomojis = _.filter(data, (js_girl) ->
                 !!_.find(js_girl.keywords, (keyword) ->
-                  keyword.indexOf(query) == 0
+                  keyword.indexOf(query) > -1
                 )
               )
             else
@@ -179,7 +179,7 @@ atwhoOptions =
             if query
               sushidots = _.filter(data, (js_girl) ->
                 !!_.find(js_girl.keywords, (keyword) ->
-                  keyword.indexOf(query) == 0
+                  keyword.indexOf(query) > -1
                 )
               )
             else
