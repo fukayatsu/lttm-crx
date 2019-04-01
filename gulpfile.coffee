@@ -30,7 +30,7 @@ gulp.task 'download:decomoji', (done) ->
   repo = octo.repos('oti', 'slack-reaction-decomoji')
   images = []
   dirs = ['basic', 'extra']
-  fetchPromises = dirs.map((dir) -> repo.contents("decomoji/#{dir}").fetch(ref: '4.11.0'))
+  fetchPromises = dirs.map((dir) -> repo.contents("decomoji/#{dir}").fetch(ref: '4.12.0'))
   Promise.all(fetchPromises).then (contents) ->
     contents = [].concat.apply([], contents) # array flatten
     for content in contents
