@@ -1,20 +1,17 @@
 {
   "name": "LTTM",
   "short_name": "LTTM",
-  "version": "0.2.30",
+  "version": "0.3.0",
   "manifest_version": 2,
   "description": "Looks Tiqav To Misawa",
   "icons": {
-    "48":  "images/icon_48.png",
+    "48": "images/icon_48.png",
     "128": "images/icon_128.png"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "css": [
-        "css/jquery.atwho.css",
-        "css/lttm.css"
-      ],
+      "css": ["css/jquery.atwho.css", "css/lttm.css"],
       "js": [
         "js/jquery-2.1.0.min.js",
         "js/jquery.caret.min.js",
