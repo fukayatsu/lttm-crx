@@ -17,26 +17,7 @@ atwhoOptions =
       query = query.slice(1)
       switch
         when kind is "l"
-          if location.protocol == "https:"
-            url = 'https://lttm-ssl.herokuapp.com/lgtm'
-          else
-            url = 'http://www.lgtm.in/g'
-          task1 = $.getJSON(url + '?' + Math.random()).then()
-          task2 = $.getJSON(url + '?' + Math.random()).then()
-          task3 = $.getJSON(url + '?' + Math.random()).then()
-          $.when(task1, task2, task3).then (a, b, c) ->
-            images = _.map([
-              a[0]
-              b[0]
-              c[0]
-            ], (data) ->
-              imageUrl = data.actualImageUrl
-              name:            imageUrl
-              imageUrl:        imageUrl
-              imagePreviewUrl: previewUrl(imageUrl)
-              alt: "LGTM"
-            )
-            callback images
+          fetchFromLGTMoon callback
         when kind is "t"
           if query
             $.getJSON "https://d942scftf40wm.cloudfront.net/search.json",
@@ -194,6 +175,31 @@ atwhoOptions =
                 alt: ":#{sushidot.keywords[0]}"
             )
             callback images
+
+lttmCache = []
+LTTM_PAGE_SIZE = 4;
+
+fetchFromLGTMoon = _.throttle (callback) ->
+  if lttmCache.length < LTTM_PAGE_SIZE
+    fetchParams =
+      url: 'https://lgtmoon.dev/api/images/random'
+    chrome.runtime.sendMessage fetchParams ,(data) ->
+      images = []
+      $.each data.images, (k, v) ->
+        url = v.url
+        images.push
+          name: url
+          imageUrl: url
+          imagePreviewUrl: previewUrl(url)
+          alt: "LGTM"
+      lttmCache = lttmCache.concat images
+      callback lttmCache.slice(0, LTTM_PAGE_SIZE)
+      lttmCache = lttmCache.slice(LTTM_PAGE_SIZE)
+  else
+    callback lttmCache.slice(0, LTTM_PAGE_SIZE)
+    lttmCache = lttmCache.slice(LTTM_PAGE_SIZE)
+, 1000
+, { leading: false }
 
 previewUrl = (url) ->
   return url if location.protocol     == "http:"
