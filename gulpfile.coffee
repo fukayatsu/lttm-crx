@@ -1,6 +1,6 @@
 gulp        = require 'gulp'
 coffee      = require 'gulp-coffee'
-sass        = require 'gulp-sass'
+sass        = require('gulp-sass')(require 'sass')
 clean       = require 'gulp-clean'
 zip         = require 'gulp-zip'
 download    = require 'gulp-download'
