@@ -8,6 +8,10 @@
     "48": "images/icon_48.png",
     "128": "images/icon_128.png"
   },
+  "host_permissions": ["https://lgtmoon.dev/api/images/random"],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
