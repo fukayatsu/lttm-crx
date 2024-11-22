@@ -10,12 +10,12 @@ const fs = require("fs");
 
 const paths = {
   lib: "lib/**/*.*",
-  js: "src/js/**/*.coffee",
+  js: "src/js/**/*.js",
   css: "src/css/**/*.scss",
 };
 
 gulp.task("copy", function () {
-  return gulp.src(paths.lib).pipe(gulp.dest("build/"));
+  return gulp.src([paths.lib, paths.js]).pipe(gulp.dest("build/"));
 });
 
 gulp.task("download:misawa", function () {
@@ -83,17 +83,13 @@ gulp.task("download:sushidot", function (done) {
   });
 });
 
-gulp.task("coffee", function () {
-  return gulp.src(paths.js).pipe(coffee()).pipe(gulp.dest("build/js/"));
-});
-
 gulp.task("sass", function () {
   return gulp.src(paths.css).pipe(sass()).pipe(gulp.dest("build/css/"));
 });
 
 gulp.task("watch", function () {
   gulp.watch(paths.lib, gulp.task("copy"));
-  gulp.watch(paths.js, gulp.task("coffee"));
+  gulp.watch(paths.js, gulp.task("copy"));
   return gulp.watch(paths.css, gulp.task("sass"));
 });
 
@@ -120,8 +116,8 @@ gulp.task(
   ),
 );
 
-// gulp.task("build", gulp.parallel("copy", "download", "coffee", "sass"));
-gulp.task("build", gulp.parallel("copy", "coffee", "sass"));
+// gulp.task("build", gulp.parallel("copy", "download", "sass"));
+gulp.task("build", gulp.parallel("copy", "sass"));
 gulp.task("rebuild", gulp.series("clean", "build"));
 gulp.task("release", gulp.series("clean", "build", "zip"));
 gulp.task("default", gulp.series("clean", "build", "watch"));

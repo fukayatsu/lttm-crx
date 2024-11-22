@@ -19,7 +19,7 @@
         "js/underscore-min.js",
         "js/xregexp-all-min.js",
         "js/sha1.js",
-        "js/lttm.js"
+        "lttm.js"
       ]
     }
   ],
