@@ -1,11 +1,10 @@
 lttm-crx
 ========
 
-Looks Tiqav To Misawa (useful Chrome Extension)
+Looks Terrific To Misawa (useful Chrome Extension)
 
 
 - LGTM: `!l or !ll...`
-- tiqav: `!t<query>`
 - misawa: `!m<query>`
 - irasutoya: `!i<query>`
 - SUSHI-YUKI(寿司ゆき): `!s`
@@ -28,10 +27,8 @@ And then drag and drop `build` dir into chrome://extensions/
 # Thanks!
 - [ichord/At.js](https://github.com/ichord/At.js)
     - nice auto completion
-- [LGTM.in/g](http://www.lgtm.in/)
-    - images for LGTM
-- [tiqav](http://tiqav.com/)
-    - many unique images for reply
+- [LGTMoon - 最もシンプルなLGTM画像ジェネレーター](https://lgtmoon.dev/)
+    - [yoshikyoto/lgtmoon: LGTM画像を簡単に作成できるアプリ](https://github.com/yoshikyoto/lgtmoon)
 - [horesa.se](http://horesa.se/)
     - cool horesase-boys a.k.a. JIGOKU NO MISAWA (Misawa in hell)
 - [無料イラスト かわいいフリー素材集 いらすとや](http://www.irasutoya.com/)
