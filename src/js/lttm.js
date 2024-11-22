@@ -37,24 +37,6 @@ const atwhoOptions = {
           });
           callback(images);
         });
-      } else if (kind == "t") {
-        if (query) {
-          return $.getJSON("https://d942scftf40wm.cloudfront.net/search.json",
-            {q: query}
-          , function(data) {
-            const images = [];
-            $.each(data, function(k, v) {
-              const url = "https://img.tiqav.com/" + v.id + "." + v.ext;
-              return images.push({
-                name: url,
-                imageUrl: url,
-                imagePreviewUrl: previewUrl(url),
-                alt: "tiqav"
-              });
-            });
-            callback(images);
-          });
-        }
       } else if (kind == "m") {
         return $.getJSON(chrome.runtime.getURL("/config/meigens.json"), function(data) {
           let boys = [];
