@@ -1,8 +1,8 @@
 {
   "name": "LTTM",
   "short_name": "LTTM",
-  "version": "0.3.0",
-  "manifest_version": 2,
+  "version": "0.4.0",
+  "manifest_version": 3,
   "description": "Looks Tiqav To Misawa",
   "icons": {
     "48": "images/icon_48.png",
@@ -24,13 +24,18 @@
     }
   ],
   "web_accessible_resources": [
-    "config/meigens.json",
-    "config/sushi_list.json",
-    "config/js_girls.json",
-    "config/decomoji.json",
-    "config/sushidot.json",
-    "config/irasutoya.json",
-    "config/engineer_homeru_neko.json",
-    "js/underscore-min.map"
+    {
+      "resources": [
+        "config/meigens.json",
+        "config/sushi_list.json",
+        "config/js_girls.json",
+        "config/decomoji.json",
+        "config/sushidot.json",
+        "config/irasutoya.json",
+        "config/engineer_homeru_neko.json",
+        "js/underscore-min.map"
+      ],
+      "matches": ["<all_urls>"]
+    }
   ]
 }

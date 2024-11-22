@@ -52,7 +52,7 @@ atwhoOptions =
                   alt: "tiqav"
               callback images
         when kind is "m"
-          $.getJSON chrome.extension.getURL("/config/meigens.json"), (data) ->
+          $.getJSON chrome.runtime.getURL("/config/meigens.json"), (data) ->
             boys = []
             if query
               boys = _.filter(data, (n) ->
@@ -70,7 +70,7 @@ atwhoOptions =
                 alt: "ミサワ"
             callback images
         when kind is "i"
-          $.getJSON chrome.extension.getURL("/config/irasutoya.json"), (data) ->
+          $.getJSON chrome.runtime.getURL("/config/irasutoya.json"), (data) ->
             illustrations = []
             if query
               illustrations = _.filter(data, (n) ->
@@ -90,7 +90,7 @@ atwhoOptions =
                 alt: v.title
             callback images
         when kind is 's'
-          $.getJSON chrome.extension.getURL("/config/sushi_list.json"), (data) ->
+          $.getJSON chrome.runtime.getURL("/config/sushi_list.json"), (data) ->
             sushiList = []
             if query
               sushiList = _.filter(data, (sushi) ->
@@ -111,7 +111,7 @@ atwhoOptions =
             )
             callback images
         when kind is 'j'
-          $.getJSON chrome.extension.getURL("/config/js_girls.json"), (data) ->
+          $.getJSON chrome.runtime.getURL("/config/js_girls.json"), (data) ->
             js_girls = []
             if query
               js_girls = _.filter(data, (js_girl) ->
@@ -132,7 +132,7 @@ atwhoOptions =
             )
             callback images
         when kind is 'n'
-          $.getJSON chrome.extension.getURL("/config/engineer_homeru_neko.json"), (data) ->
+          $.getJSON chrome.runtime.getURL("/config/engineer_homeru_neko.json"), (data) ->
             source = []
             if query
               source = _.filter(data, (js_girl) ->
@@ -153,7 +153,7 @@ atwhoOptions =
             )
             callback images
         when kind is 'd'
-          $.getJSON chrome.extension.getURL("/config/decomoji.json"), (data) ->
+          $.getJSON chrome.runtime.getURL("/config/decomoji.json"), (data) ->
             decomojis = []
             if query
               decomojis = _.filter(data, (js_girl) ->
@@ -174,7 +174,7 @@ atwhoOptions =
             )
             callback images
         when kind is 'r'
-          $.getJSON chrome.extension.getURL("/config/sushidot.json"), (data) ->
+          $.getJSON chrome.runtime.getURL("/config/sushidot.json"), (data) ->
             sushidots = []
             if query
               sushidots = _.filter(data, (js_girl) ->
