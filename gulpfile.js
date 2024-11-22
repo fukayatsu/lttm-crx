@@ -3,6 +3,7 @@ const coffee = require("gulp-coffee");
 const sass = require("gulp-sass")(require("sass"));
 const clean = require("gulp-clean");
 const download = require("gulp-download");
+const zip = require("gulp-zip");
 const Octokat = require("octokat");
 
 const fs = require("fs");
