@@ -1,7 +1,7 @@
 {
   "name": "LTTM",
   "short_name": "LTTM",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "manifest_version": 3,
   "description": "Looks Terrific To Misawa",
   "icons": {
