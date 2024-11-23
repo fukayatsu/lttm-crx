@@ -15,7 +15,7 @@ const paths = {
 };
 
 gulp.task("copy", function () {
-  return gulp.src(paths.lib, { encoding: false }).pipe(gulp.dest("build/"));
+  return gulp.src([paths.lib, paths.js], { encoding: false }).pipe(gulp.dest("build/"));
 });
 
 gulp.task("download:misawa", function () {
@@ -116,8 +116,8 @@ gulp.task(
   ),
 );
 
-// gulp.task("build", gulp.parallel("copy", "download", "sass"));
-gulp.task("build", gulp.parallel("copy", "sass"));
+// gulp.task("build", gulp.series("copy", "download", "sass"));
+gulp.task("build",   gulp.series("copy", "sass"));
 gulp.task("rebuild", gulp.series("clean", "build"));
 gulp.task("release", gulp.series("clean", "build", "zip"));
 gulp.task("default", gulp.series("clean", "build", "watch"));
