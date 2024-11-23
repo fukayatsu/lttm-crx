@@ -15,7 +15,7 @@ const paths = {
 };
 
 gulp.task("copy", function () {
-  return gulp.src([paths.lib, paths.js]).pipe(gulp.dest("build/"));
+  return gulp.src(paths.lib, { encoding: false }).pipe(gulp.dest("build/"));
 });
 
 gulp.task("download:misawa", function () {
