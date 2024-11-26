@@ -103,7 +103,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("zip", function () {
-  return gulp.src("build/**/*.*").pipe(zip("build.zip")).pipe(gulp.dest("./"));
+  return gulp.src("build/**/*.*", { encoding: false }).pipe(zip("build.zip")).pipe(gulp.dest("./"));
 });
 
 gulp.task(
